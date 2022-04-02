@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Character Sheet</h2>
+<form action="/action_page.php" autocomplete="on">
+<div class="nameinput">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+</div>
+<div class="genderinput">
+	<label for="gender">Gender:</label><br>
+    <input type="text" id="gender" name="gender"><br>
+</div>
+<div class="lookinput">
+  <label for="look">Look:</label><br>
+  <textarea id="look" name="look">
+  </textarea>
+</div>
+  <br>
+<div class="harminput">
+  <label for="harm">Harm:</label><br>
+  <input type="checkbox" id="harm1" name="harm1" value="harm1">
+  <label for="harm1">1</label>
+    <input type="checkbox" id="harm2" name="harm2" value="harm2">
+  <label for="harm">2</label>
+    <input type="checkbox" id="harm3" name="harm3" value="harm3">
+  <label for="harm3">3</label><br>
+</div>
+<div class="conditioninput">
+  <label for="conditions">Conditions:</label><br>
+  <input type="checkbox" id="injured1" name="injured1" value="injured1">
+  <label for="injured1">Injured (Body -1)</label>
+   <input type="checkbox" id="confused1" name="confused1" value="confused1">
+  <label for="confused1">Confused (Mind -1)</label>
+  <input type="checkbox" id="afraid1" name="afraid1" value="afraid1">
+  <label for="afraid1">Afraid (Spirit -1)</label><br>
+</div>
+<br>
+<div class="statsinput">
+<label for="body">Body:</label>
+
+<input type="number" id="body" name="body"
+       min="-1" max="1">
+<label for="mind">Mind:</label>
+
+<input type="number" id="mind" name="mind"
+       min="-1" max="1">
+<label for="spirit">Spirit:</label>
+
+<input type="number" id="spirit" name="spirit"
+       min="-1" max="1">
+</div><br>
+<div class="powerinput">
+	<label for="power">Power:</label><br>
+    <input type="text" id="powername" name="powername"><br>
+    <label for="powerdesc">Description:</label><br>
+    <textarea id="powerdesc" name="powerdesc"></textarea><br>
+    <label for="drawback">Drawback:</label><br>
+    <input type="text" id="drawback" name="drawback"><br>
+    <label for="knowntech">Known Techniques:</label><br>
+    <textarea id="powerdesc" name="powerdesc"></textarea><br>
+</div>
+<br>
+<div class="goalinput">
+	<label for="goal">Current Goal:</label><br>
+    <input type="text" id="goal" name="goal"><br>
+</div>
+<div class="oginput">
+	<label for="og">Original Goal:</label><br>
+    <input type="text" id="og" name="og"><br>
+</div><br>
+<div class="bondsinput">
+  <label for="bonds">Bonds:</label><br>
+  <textarea id="bonds" name="bonds">
+  </textarea>
+</div>
+  <br>
+<div class="pbminput">
+  <label for="pbm">Playbook Moves:</label><br>
+  <textarea id="pbm" name="pbm">
+  </textarea>
+</div>
+  <br>
+  <br><br>
+  <input type="submit" value="Save Changes">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+</body>
+</html>
+
